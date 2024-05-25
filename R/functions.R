@@ -609,6 +609,10 @@ computeMetric <- function(pred, response, metric.type) {
       metric <- apply(pred, 2, function(p) {
         cindex::CIndex(p, response[,1], response[,2])
       })
+    } else if (metric.type == 'pcorr') {
+        metric <- apply(pred, 2, function(p) {
+            cor(p, response)
+        })
     }
     metric
 }
