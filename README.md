@@ -15,7 +15,7 @@ library(devtools)
 install_github("junyangq/glmnetPlus", Ncpus=8)
 install_github("chrchang/plink-ng", subdir="/2.0/cindex", Ncpus=8)
 install_github("chrchang/plink-ng", subdir="/2.0/pgenlibr", Ncpus=8)
-install_github("salcc/snpnet", Ncpus=8)
+install_github("christho23/snpnet", Ncpus=8)
 library(snpnet)
 ```
 We assume the users already have PLINK 2.0. Otherwise it can be installed from https://www.cog-genomics.org/plink/2.0/.
