@@ -611,7 +611,7 @@ computeMetric <- function(pred, response, metric.type) {
       })
     } else if (metric.type == 'pcorr') {
         metric <- apply(pred, 2, function(p) {
-            cor(p, response)
+            cor(p, response, method="pearson")
         })
     }
     metric
